@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quatsch</title>
+    <style>
+        body {
+            font-family: Papyrus;
+        }
+ 
+        #quatschHeader {
+            text-align: center;
+        }
+ 
+        footer {
+            padding: 10px;
+            background-color: white;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            text-align: center;
+        }
+    </style>
+</head>
+ 
+<body>
+    <h1 id="quatschHeader">aliquipirata</h1>
+    <footer>aliquipirata</footer>
+    <script>
+        let h1 = document.querySelector("#quatschHeader");
+        let background = document.querySelector("body");
+        const colors = ["black", "red", "green", "blue", "darkred", "yellow", "purple", "orange", "gold", "pink", "cornflowerblue", "brown"];
+        setInterval(() => {
+            let random = Math.random();
+            random = random.toFixed(1) * 10;
+            h1.style.color = colors[random];
+            random = Math.random();
+            random = random.toFixed(1) * 10;
+            background.style.backgroundColor = colors[random];
+        }, 300)
+    </script>
+</body>
+ 
+</html>
