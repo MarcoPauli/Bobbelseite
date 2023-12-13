@@ -27,7 +27,7 @@
     </style>
 </head>
  
-<body>
+<body onload="startTheCack()">
     <h1 id="quatschHeader">bobbel</h1>
     <footer>_bobbel_</footer>
     <script>
@@ -42,6 +42,11 @@
             random = random.toFixed(1) * 10;
             background.style.backgroundColor = colors[random];
         }, 300)
+        
+        function startTheCack() {
+            var audio = new Audio('musik.mp3');
+            audio.play();
+        }
     </script>
 </body>
  
