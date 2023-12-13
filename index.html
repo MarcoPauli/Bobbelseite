@@ -34,6 +34,12 @@
         let h1 = document.querySelector("#quatschHeader");
         let background = document.querySelector("body");
         const colors = ["black", "red", "green", "blue", "darkred", "yellow", "purple", "orange", "gold", "pink", "cornflowerblue", "brown"];
+     function startTheCack() {
+            alert("jaks");
+            var audio = new Audio('musik.mp3');
+            audio.play();
+            }
+      startTheCack();
         setInterval(() => {
             let random = Math.random();
             random = random.toFixed(1) * 10;
@@ -42,14 +48,6 @@
             random = random.toFixed(1) * 10;
             background.style.backgroundColor = colors[random];
         }, 300)
-        
-        setTimeout(() => {
-        function startTheCack() {
-            alert("jaks");
-            var audio = new Audio('musik.mp3');
-            audio.play();
-            }
-        }, 1000)
     </script>
 </body>
  
